@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const config = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "./dist"),
     filename: "bundle.js"
   },
   module: {
@@ -13,6 +13,15 @@ const config = {
         test: /\.(js|jsx)$/,
         use: "babel-loader",
         exclude: /node_modules/
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader",
+            options: { minimize: true }
+          }
+        ]
       },
       {
         test: /\.scss$/,
