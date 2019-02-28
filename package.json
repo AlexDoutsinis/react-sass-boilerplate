@@ -11,6 +11,8 @@
   "author": "Alexis Doutsinis",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "@hot-loader/react-dom": "^16.8.3",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
   },
@@ -18,7 +20,6 @@
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
-    "@hot-loader/react-dom": "^16.8.3",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
     "html-loader": "^0.5.5",
